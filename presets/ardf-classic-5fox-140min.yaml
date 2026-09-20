@@ -1,0 +1,30 @@
+id: ardf-classic-5fox-140min
+version: 0.1.0
+name: ARDF Classic — 5 controls / 140 minutes
+sport: ardf
+team_mode: configurable
+course:
+  ordered: false
+  start_required: true
+  finish_required: true
+  controls:
+    - FOX-1
+    - FOX-2
+    - FOX-3
+    - FOX-4
+    - FOX-5
+scoring:
+  primary: controls_completed
+  tiebreaker: elapsed_time
+limits:
+  maximum_elapsed_seconds: 8400
+  over_limit_status: foul
+statuses:
+  - valid
+  - dns
+  - dnf
+  - dsq
+  - foul
+notes: >-
+  Reference preset derived from the first planned field deployment. Organisers
+  may copy and version this preset without changing the platform core.
